@@ -1,0 +1,28 @@
+Roteiro do meu curso de HTML e CSS:
+
+1 - Internet, HTML e protocolo HTTP
+2 - Estrutura Básica de um Elemento HTML
+3 - Tags, elementos e atributos em HTML
+4 - Títulos e seus níveis
+5 - Cabeçalhos, parágrafos, listas e rótulos
+6 - Botões
+7 - Inserindo imagens e vídeos
+8 - Tabelas e formulários
+9 - Semântica no HTML
+10 - Incorporando áudio e vídeo
+11 - iFrames e objetos imbutidos
+12 - Estruturação com divs e spans
+13 - O que é CSS e estilização de páginas Web
+14 - Sintaxe básica do CSS
+15 - Estilizando textos e fontes
+16 - Cores e fundos com CSS
+17 - Espaçamento e alinhamento de itens
+18 - Box model: Margem, borda, preenchimento e dimensões
+19 - Posicionamento de elementos: statidc, relative, absolute, fixed
+20 - Flexbox: Layout flexível
+21 - Grid CSS: organização de layout em grade
+22 - Desenhos, ícones e clip-path
+23 - Animações e transformações em CSS
+24 - Media Queries
+25 - Fazendo seu próprio portfólio;
+26 - Fazendo deploy na Vercel.
