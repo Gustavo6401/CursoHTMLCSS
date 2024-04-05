@@ -16,3 +16,9 @@
 14. O que é CSS e estilização de páginas Web
 15. Sintaxe básica do CSS
 16. Estilizando textos e fontes.
+17. Cores e Fundos com CSS
+18. Espaçamento e Alinhamento de Itens
+19. Box Model: Margem, borda, preenchimento e dimensões
+20. Posicionamento de elementos: static, relative, absolute, fixed.
+21. Flexbox: Layout flexível
+22. Grid CSS: organização de layout em grade.
