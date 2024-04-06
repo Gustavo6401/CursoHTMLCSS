@@ -22,3 +22,8 @@
 20. Posicionamento de elementos: static, relative, absolute, fixed.
 21. Flexbox: Layout flexível
 22. Grid CSS: organização de layout em grade.
+23. Desenhos, ícones e clip-path
+24. Animações e Transformações em CSS
+25. Media Queries e Responsividade
+26. Fazendo seu Próprio Portfólio
+27. Fazendo Deploy na Vercel
