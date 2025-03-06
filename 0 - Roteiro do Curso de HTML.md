@@ -16,7 +16,7 @@
 14. O que é CSS e estilização de páginas Web
 15. Sintaxe básica do CSS
 16. Estilizando textos e fontes.
-17. Cores e Fundos com CSS
+17. Cores, Fundos e Opacidade com CSS
 18. Espaçamento e Alinhamento de Itens
 19. Box Model: Margem, borda, preenchimento e dimensões
 20. Posicionamento de elementos: static, relative, absolute, fixed.
@@ -27,3 +27,8 @@
 25. Media Queries e Responsividade
 26. Fazendo seu Próprio Portfólio
 27. Fazendo Deploy na Vercel
+28. Aumento de Performance com HTML - fetchpriority
+29. FID - First Input Delay
+30. Srcset - Propriedade de Responsividade
+31. Subindo uma Aplicação otimizada na Vercel
+32. Melhorando seu Código CSS - A função Calc

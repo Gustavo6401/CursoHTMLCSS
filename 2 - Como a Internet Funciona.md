@@ -4,9 +4,9 @@ Antes de tudo, temos que entender como o computador funciona.
 
 ## E como o computador funciona?
 
-O computador funciona de uma forma um tanto quanto exótico. Ele funciona com um monte de zeros e uns, ligado e desligado, é como se os dados fossem pequenos circuitos elétricos que alimentam o computador. Cada um desses zeros e uns são um bit. 8 bytes geram um bit.
+O computador funciona de uma forma um tanto quanto exótico. Ele funciona com um monte de zeros e uns, ligado e desligado, é como se os dados fossem pequenos circuitos elétricos que alimentam o computador. Cada um desses zeros e uns são um bit. 8 bits geram um byte.
 
-É importante citar o seguinte: um computador opera de uma forma realmente exótica, pois muitas pessoas tendem a pensar que 1KB por exemplo é 1024 Bytes e não é bem assim. 1 KiloByte por exemplo, nada mais é do que 1024 Bytes. Por que disso? Pense comigo! Assim como o computador opera com uma série de zeros e uns, ele opera na base binária. E vale lembrar que 2 elevado a 10 é igual a 1024, exatamente por isso que 1 KiloByte nada mais é do que 1024 Bytes.
+É importante citar o seguinte: um computador opera de uma forma realmente exótica, pois muitas pessoas tendem a pensar que 1KB por exemplo é 1000 Bytes e não é bem assim. 1 KiloByte por exemplo, nada mais é do que 1024 Bytes. Por que disso? Pense comigo! Assim como o computador opera com uma série de zeros e uns, ele opera na base binária. E vale lembrar que 2 elevado a 10 é igual a 1024, exatamente por isso que 1 KiloByte nada mais é do que 1024 Bytes.
 
 Tabela de conversão:
 
