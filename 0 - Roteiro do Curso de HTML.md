@@ -6,7 +6,7 @@
 4. Tags, Elementos e Atributos em HTML.
 5. Títulos e Seus Níveis
 6. Meta Dados no HTML.
-7. Cabeçalhos, parágrafos, listas e rótulos
+7. Parágrafos, listas.
 8. Atributos no HTML
 9. Botões
 10. Inserindo Imagens e Vídeos
