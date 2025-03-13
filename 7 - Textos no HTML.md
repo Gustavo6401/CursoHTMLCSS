@@ -50,7 +50,7 @@ Caso você queira grifar alguma parte do texto, existe a tag `<strong>` que te p
 
 Colocarei a partir de agora apenas pequenas partes do texto e não o texto como um todo. 
 
-```
+``` html
 <p>Meu principal projeto sem sombra de dúvidas foi a <strong>Academy SM</strong></p>
 ```
 
@@ -118,7 +118,7 @@ Existem três tipos de listas principais às quais você precisará utilizar e s
 
 Lista ordenada assemelha-se muito com a lista do markdown, nós podemos faze-la da seguinte forma no HTML:
 
-```
+``` html
 <ol>
     <li>C#</li>
     <li>JavaScript</li>
