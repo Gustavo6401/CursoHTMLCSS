@@ -13,13 +13,13 @@ O objetivo do HTML é muito simples: Apenas o conteúdo no centro, nada fora.
 Um exemplo melhor certamente seriam tags de meta descrições:
 
 ``` html
-<meta>name=viewport content=width=device-width initial-scale=1.0</meta>
+<abbr>São Paulo title=SP</abbr>
 ```
 
 Ou pior, ler um código assim:
 
 ``` html
-<meta "viewport" "width=device-width initial-scale=1.0" />
+<abbr "São Paulo" "SP"></abbr>
 ```
 
 Se você for testar isso na Visual Studio, nem irá funcionar.
