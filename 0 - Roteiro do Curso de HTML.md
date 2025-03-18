@@ -8,8 +8,8 @@
 6. Meta Dados no HTML.
 7. Parágrafos, listas.
 8. Atributos no HTML
-9. Botões
-10. Inserindo Imagens e Vídeos
+9. Inserindo Imagens e 
+10. Inserindo Vídeos 
 11. Tabelas e Formulários
 12. Semântica no HTML
 13. Incorporando áudio e Vídeo
@@ -29,8 +29,10 @@
 27. Media Queries e Responsividade
 28. Fazendo seu Próprio Portfólio
 29. Fazendo Deploy na Vercel
-30. Aumento de Performance com HTML - fetchpriority
-31. FID - First Input Delay
-32. Srcset - Propriedade de Responsividade
-33. Subindo uma Aplicação otimizada na Vercel
-34. Melhorando seu Código CSS - A função Calc
+30. 
+31. Imagens Responsivas no HTML.
+32. Aumento de Performance com HTML - fetchpriority
+33. FID - First Input Delay
+34. Srcset - Propriedade de Responsividade
+35. Subindo uma Aplicação otimizada na Vercel
+36. Melhorando seu Código CSS - A função Calc
