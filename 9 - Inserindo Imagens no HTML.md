@@ -266,3 +266,126 @@ Apertem Enter, a partir daí sua página agora possui 300 espaços em branco.
 E o Resultado também é bem legal, (ou não) 😁:
 
 ![300 BR](imgs/9.19%20-%20Muitos%20BRS.png)
+
+Ao encontrar a sua página Web, certamente você verá um número absurdo de espaços em branco:
+
+![Página em Branco](imgs/9.20%20-%20Página%20em%20Branco.png)
+
+Bom, como vimos anteriormente, isso funciona mesmo, mas e a imagem? E o carregamento dela? Bom, agora nós vamos ver uma coisa bem interessante! Utilize o atalho `Ctrl + Shift + I` e abra as ferramentas do desenvolvedor:
+
+![Ferramentas do Desenvolvedor](imgs/9.21%20-%20Ferramentas%20do%20Desenvolvedor.png)
+
+Após isso, clique na Aba Rede, ela será responsável por te ajudar a acompanhar entre outras coisas, o progresso no carregamento dos componentes de sua página, como as imagens ou o próprio arquivo `index.html`:
+
+![Aba Rede](imgs/9.22%20-%20Aba%20Rede.png)
+
+Como você pode ver, em momento algum os arquivos de imagens foram carregados correto? Pois isso mostra que estamos no caminho certo! Agora, sem fechar as ferramentas do desenvolvedor, desça até o canto da página onde a sua imagem está inserida:
+
+![Imagem](imgs/9.23%20-%20Imagem%20Carregada.png)
+
+Como podes ver, a imagem está devidamente carregada em sua página, esse é o poder do lazy loading, sua imagem só é mandada para o cliente após o cliente realmente precisar dela. Isso diminui muito a carga do seu site em seus servidores.
+
+## OK Gustavo, mas eu Queria Colocar uma Legenda Legal Em Minha Página. Conheça Então a Tag Figure e a Tag Picture para Simplificar o Nosso Trabalho! 😁
+
+A tag `<figure>` é pensada para agrupar alguns grupos de uma ou mais mídias, isso significa que eu poderia colocar a minha Tag `<img>` e ainda assim colocar uma legenda bem legal nela:
+
+``` html
+<figure>
+    <img 
+        src="imgs/image-300px.png"   
+        srcset="
+            imgs/image-300px.png 300w,
+            imgs/image-400px.png 400w,
+            imgs/image-600px.png 600w,
+            imgs/image.png 1280w
+        "
+        sizes="
+            (max-width: 400px) 300px,
+            (max-width: 600px) 400px,
+            (max-width: 1279px) 600px,
+            1280px
+        "
+        alt="Imagem responsiva"
+        loading="lazy"
+    />
+</figure>
+```
+
+Por meio desse Componente, eu posso até mesmo colocar uma legenda legal em minha imagem:
+
+``` html
+<figure>
+    <img 
+        src="imgs/image-300px.png"   
+        srcset="
+            imgs/image-300px.png 300w,
+            imgs/image-400px.png 400w,
+            imgs/image-600px.png 600w,
+            imgs/image.png 1280w
+        "
+        sizes="
+            (max-width: 400px) 300px,
+            (max-width: 600px) 400px,
+            (max-width: 1279px) 600px,
+            1280px
+        "
+        alt="Imagem responsiva"
+        loading="lazy"
+    />
+    <figcaption>Autorretrato</figcaption>
+</figure>
+```
+
+Como podes ver, a tela mudou bastante de imagem e ficou muito mais funcional graças à mudança que fizemos. 
+
+![Autorretrato](imgs/9.24%20-%20Autorretrato.png)
+
+### Mas e Essa Outra Tag a Picture? 🤔
+
+Bom, a tag `<picture>` seria uma forma boa e elegante de evitarmos aquele problema que temos atualmente com a nossa tag img, como podemos ver, o código todo na mesma tag fica muito poluído, correto?
+
+``` html
+<img 
+    src="imgs/image-300px.png"   
+    srcset="
+        imgs/image-300px.png 300w,
+        imgs/image-400px.png 400w,
+        imgs/image-600px.png 600w,
+        imgs/image.png 1280w
+    "
+    sizes="
+        (max-width: 400px) 300px,
+        (max-width: 600px) 400px,
+        (max-width: 1279px) 600px,
+        1280px
+    "
+    alt="Imagem responsiva"
+    loading="lazy"
+/>
+```
+
+A partir da Tag Picture poderemos modificar todo esse comportamento. 
+
+``` html
+<figure>
+    <picture>
+        <source srcset="imgs/image.png" media="(min-width: 1280px)">
+        <source srcset="imgs/image-600px.png" media="(min-width: 600px)">
+        <source srcset="imgs/image-400px.png" media="(min-width: 400px)">                        
+        <img src="imgs/image-300px.png" alt="Autorretrato do Gustavo" />
+    </picture>
+    <figcaption>Meu Autorretrato</figcaption>
+</figure>
+```
+
+O código ficou visivelmente mais limpo a partir do momento em que incluímos as media queries diretamente no componente picture, minha recomendação é o uso desse componente a partir de agora. 
+
+**Importante** - É importante citar que as imagens devem ser inseridas na página em ordem decrescente, isso é, a maior primeiro, a menor por último, caso contrário, isso não funciona. 
+
+## Conclusão. 📖
+
+Nesta aula, aprendemos conceitos importantes, desde redimensionamento de imagens, a criação da tag img, o uso das tags `<figure>`, `<picture>`, `<figcaption>` e `<source>`. Espero que a Aula tenha sido proveitosa e fiquem com a biografia.
+
+## Lição de Casa 📗
+
+A lição de casa é de gerar uma imagem, criar diferentes resoluções dessa imagem e inseri-las na página sob-demanda de acordo com o dispositivo do usuário. 
