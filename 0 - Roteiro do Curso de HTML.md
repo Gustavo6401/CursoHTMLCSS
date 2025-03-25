@@ -30,7 +30,7 @@
 28. Fazendo seu Próprio Portfólio
 29. Fazendo Deploy na Vercel
 30. 
-31. Imagens Responsivas no HTML.
+31. 
 32. Aumento de Performance com HTML - fetchpriority
 33. FID - First Input Delay
 34. Srcset - Propriedade de Responsividade
