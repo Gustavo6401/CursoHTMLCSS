@@ -46,11 +46,11 @@ Parágrafos jornalísticos tradicionais são desenvolvidos com a tag `<p>` Assim
 
 ### Textos em Destaque
 
-No HTML, grande parte dos textos em destaque e das tags semânticas são criados utilizando-se de textos em negrito e em itálico. A ideia é justamente destacar esses textos, tanto para usuários comuns quanto para os mecanismos de busca. Visualmente falando, para nós a diferença semântica é mínima ou até mesmo nenhuma. No entanto, o navegador para deficientes visuais enxerga as coisas de uma forma muito diferente. 
+No HTML, grande parte dos textos em destaque e das tags semânticas são criados utilizando-se de textos em negrito e em itálico. A ideia é justamente destacar esses textos, tanto para usuários comuns quanto para os mecanismos de busca. Visualmente falando, para nós a diferença semântica é mínima ou até mesmo nenhuma. No entanto, o navegador para deficientes visuais enxerga as coisas de uma forma muito diferente. O navegador lê essas informações e informa de forma diferente de acordo com a acessibilidade. 
 
 ### Negrito
 
-Caso você queira grifar alguma parte do texto, existe a tag `<strong>` que te possibilita fazer isso. 
+Caso você queira destacar alguma parte do texto, existe a tag `<strong>` que te possibilita fazer isso. A tag `<strong>` é utilizada como uma espécie de "destaque máximo" especialmente para um texto muito importante em sua página Web.
 
 Colocarei a partir de agora apenas pequenas partes do texto e não o texto como um todo. 
 
@@ -58,11 +58,9 @@ Colocarei a partir de agora apenas pequenas partes do texto e não o texto como 
 <p>Meu principal projeto sem sombra de dúvidas foi a <strong>Academy SM</strong></p>
 ```
 
-Assim como em itálico, é possível fazer isso para destacar seu texto.
-
 ### Itálico
 
-Já para colocar seu texto em itálico, o processo é muito parecido, existe a tag `<em>` que possibilita fazer isso.
+Já para colocar seu texto em itálico, o processo é muito parecido, existe a tag `<em>` que possibilita fazer isso. Vale lembrar que o destaque da tag `<em>` é relativamente menor que o da tag `<strong>`
 
 ``` html
  <p>A <em>Academy SM</em> tende a ser útil especialmente para professores universitários e professores do ensino médio. </p>
@@ -168,11 +166,11 @@ A lista detalhada também é um recurso interessante para se usar em suas págin
 
 ``` html
 <dl>
-     <dt>Academy SM</dt>
-     <dd>A Academy SM é um projeto educacional focado principalmente em profissionais da educação e naqueles que têm dificuldades de acesso à educação.</dd>
+    <dt>Academy SM</dt>
+    <dd>A Academy SM é um projeto educacional focado principalmente em profissionais da educação e naqueles que têm dificuldades de acesso à educação.</dd>
 
-     <dt>Sistema de CI/CD</dt>
-     <dd>Nosso sistema de CI/CD é focado para gerar builds e versões de produção das APIs que desenvolvi e mantê-las na minha máquina EC2.</dd>
+    <dt>Sistema de CI/CD</dt>
+    <dd>Nosso sistema de CI/CD é focado para gerar builds e versões de produção das APIs que desenvolvi e mantê-las na minha máquina EC2.</dd>
 </dl>
 ```
 
