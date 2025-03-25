@@ -44,6 +44,10 @@ Parágrafos jornalísticos tradicionais são desenvolvidos com a tag `<p>` Assim
 </html>
 ```
 
+### Textos em Destaque
+
+No HTML, grande parte dos textos em destaque e das tags semânticas são criados utilizando-se de textos em negrito e em itálico. A ideia é justamente destacar esses textos, tanto para usuários comuns quanto para os mecanismos de busca. Visualmente falando, para nós a diferença semântica é mínima ou até mesmo nenhuma. No entanto, o navegador para deficientes visuais enxerga as coisas de uma forma muito diferente. 
+
 ### Negrito
 
 Caso você queira grifar alguma parte do texto, existe a tag `<strong>` que te possibilita fazer isso. 
