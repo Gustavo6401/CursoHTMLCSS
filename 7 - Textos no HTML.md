@@ -144,11 +144,11 @@ Já as listas não ordenadas já não seguem à risca esse modelo implementado p
 
 ``` html
 <ul>
-     <li>ASP.Net Core</li>
-     <li>React</li>
-     <li>Razor</li>
-     <li>Express</li>
-     <li>.NET</li>
+    <li>ASP.Net Core</li>
+    <li>React</li>
+    <li>Razor</li>
+    <li>Express</li>
+    <li>.NET</li>
 </ul>
 ```
 

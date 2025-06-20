@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" />
+
+            <label for="maior">Maior de Idade?</label>
+            <input id="maior" type="checkbox" name="maior" />
+
+            <label>
+                <input type="radio" name="sexo" value="masculino" />
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="Feminino" />
+                Feminino
+            </label>
+        </fieldset>
+
+        <label>Outras Considerações</label>
+        <textarea></textarea>
+
+        <fieldset>
+            <select name="estado">
+                <option value="SP">São Paulo</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Cadastrar Dados.</button>
+        <button type="reset">Limpar Formulário</button>
+    </form>
+</body>
+</html>

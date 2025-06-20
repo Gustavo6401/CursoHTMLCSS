@@ -6,35 +6,14 @@
     <title>Imagens no HTML</title>
 </head>
 <body>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <figure>
-        <img 
-            src="imgs/image-300px.png"   
-            srcset="
-                imgs/image-300px.png 300w,
-                imgs/image-400px.png 400w,
-                imgs/image-600px.png 600w,
-                imgs/image.png 1280w
-            "
-            sizes="
-                (max-width: 400px) 300px,
-                (max-width: 600px) 400px,
-                (max-width: 1279px) 600px,
-                1280px
-            "
-            alt="Imagem responsiva"
-            loading="lazy"
-        />
-        <figcaption>Autorretrato</figcaption>
-    </figure>
     <figure>
         <picture>
             <source srcset="imgs/image.png" media="(min-width: 1280px)">
             <source srcset="imgs/image-600px.png" media="(min-width: 600px)">
-            <source srcset="imgs/image-400px.png" media="(min-width: 400px)">                        
-            <img src="imgs/image-300px.png" alt="Autorretrato do Gustavo" />
+            <source srcset="imgs/image-400px.png" media="(min-width: 400px)">
+            <img src="imgs/image-300px.png" alt="Autorretrato do Gustavo" loading="lazy" />
         </picture>
-        <figcaption>Meu Autorretrato</figcaption>
+        <figcaption>Autorretrato do Gustavo</figcaption>
     </figure>
 </body>
 </html>
