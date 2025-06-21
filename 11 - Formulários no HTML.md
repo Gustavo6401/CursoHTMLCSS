@@ -94,6 +94,26 @@ Cartamente, você também está pensando em alguma forma de cadastrar múltiplas
 </label>
 ```
 
+### Arquivos e Cores
+
+Os inputs também servem para que nós possamos enviar ao servidor arquivos e cores para os usuários. isso pode ser de grande ajudar para que existam alguns tipos de sistemas, tais como as redes sociais ou qualquer tipo de sistema de upload de arquivo. 
+
+``` html
+<div>
+    <label for="foto">Sua Foto de Perfil</label>
+    <input type="file" name="foto" id="foto" />
+</div>
+```
+
+E quanto às cores, o princípio de utilização é bem parecido:
+
+``` html
+<div>
+    <label for="favColor">Cor Preferida</label>
+    <input type="color" name="favColor" id="favColor" />
+</div>
+```
+
 ### Select
 
 Mas imagine ter que selecionar o estado dessa forma, não é mesmo? Ficaria terrível para o usuário! É exatamente por isso que existe um campo muito semelhante ao input chamado select. 
