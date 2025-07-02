@@ -6,60 +6,60 @@
     <title>Formulários</title>
 </head>
 <body>
-    <form action="" method="post">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
+    <form action="https://httpbin.org/post" method="post">
+        <div>
             <div>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu Nome" />
+                <label>Nome</label>
+                <input type="text" maxlength="20" required placeholder="Nome" />
             </div>
+            <div>
+                <label>E-Mail</label>
+                <input type="email" placeholder="E-Mail" />
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" />
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="tel" pattern="" />
+            </div>
+            <div>
+                <label>Site Pessoal</label>
+                <input type="url" />
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Idade</label>
+                <input type="number" required min="5" max="200" />
+                <input type="range" min="5" max="200" />
+            </div>
+            <div>
+                <label>Data de Nascimento</label>
+                <input type="date" />
+            </div>
+            <div>
+                <label>Hora que Você Vai para Casa</label>
+                <input type="time" />
+            </div>
+            <div>
+                <label>Data e Hora do Seu Nascimento</label>
+                <input type="datetime-local" /> 
+            </div>
+            <div>
+                <label>Mês do Seu Aniversário</label>
+                <input type="month" />
+            </div>
+            <div>
+                <label>Década Preferida</label>
+                <input type="number" min="1950" max="2020" step="10" />
+            </div>
+        </div>
 
-            <div>
-                <label for="maior">Maior de Idade?</label>
-                <input id="maior" type="checkbox" name="maior" />
-            </div>
-
-            <div>
-                <label>
-                    <input type="radio" name="sexo" value="masculino" />
-                    Masculino
-                </label>
-                <label>
-                    <input type="radio" name="sexo" value="Feminino" />
-                    Feminino
-                </label>
-            </div>
-            
-            <div>
-                <label for="foto">Sua Foto de Perfil</label>
-                <input type="file" name="foto" id="foto" />
-            </div>
-            <div>
-                <label for="outros">Outras Considerações</label>
-                <textarea id="outros"></textarea>
-            </div>
-        </fieldset>     
-
-        <fieldset>
-            <legend>Endereço</legend>
-            <div>
-                <label>Estado</label>
-                <select name="estado">
-                    <option value="SP">São Paulo</option>
-                </select>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Curiosidades Sobre Você</legend>
-            <div>
-                <label for="favColor">Cor Preferida</label>
-                <input type="color" name="favColor" id="favColor" />
-            </div>
-        </fieldset>
-
-        <button type="submit">Cadastrar Dados.</button>
-        <button type="reset">Limpar Formulário</button>
+        <div>
+            <button type="submit">Submeter</button>
+        </div>
     </form>
 </body>
 </html>

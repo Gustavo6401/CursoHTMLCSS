@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+    <style>
+        table, th, tr, td, caption {
+            border: 1px solid #000;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- <table>
+        <caption>Minhas Linguagens</caption>
+        <thead>
+            <tr>
+                <th>Linguagem</th>
+                <th>Meu Nível</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C#</td>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Básico</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Gustavo da Silva Oliveira</td>
+            </tr>
+        </tfoot>
+    </table> -->
+    <!-- <table>
+        <caption>Combos</caption>
+        <colgroup>
+            <col span="1" style="background-color: white;">
+            <col span="1" style="background-color: aqua;">
+            <col span="1" style="background-color: deeppink;">
+            <col span="1" style="background-color: yellow;" >
+            <col span="1" style="background-color: lime;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th id="hamburguer">Hamburguer</th>
+                <th id="acompanhamento">Acompanhamento</th>
+                <th id="bebida">Bebida</th>
+                <th id="sobremesa">Sobremesa</th>
+                <th id="preco">Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="hamburguer">X-Burguer Bacon</td>
+                <td headers="acompanhamento">Batatas Cheddar e Bacon</td>
+                <td headers="bebida">Coca-Cola</td>
+                <td headers="sobremesa">Sundae Chocolate</td>
+                <td headers="preco">R$ 60,00</td>
+            </tr>
+            <tr>
+                <td headers="hamburguer">X-Burguer Tradicional</td>
+                <td headers="acompanhamento">Batatas Cheddar e Bacon</td>
+                <td headers="bebida" colspan="2">Coca-Cola</td>
+                <td headers="preco">R$ 50,00</td>
+            </tr>
+            <tr>
+                <td headers="hamburguer" colspan="2">X-Burguer Tradicional</td>
+                <td headers="bebida">Coca-Cola</td>
+                <td headers="sobremesa">Sundae Chocolate</td>
+                <td headers="preco">R$ 50,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">A melhor Hamburgueria do Bairro!</td>
+            </tr>
+        </tfoot>
+    </table> -->
+    <!-- <table>
+        <caption>Minhas Tecnologias</caption>
+        <thead>
+            <th scope="col">Descrição</th>
+            <th scope="col">Tecnologia</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Linguagens de Programação</th>
+                <td>C#</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Linguagens de Marcação</th>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Gustavo da Silva Oliveira</td>
+            </tr>
+        </tfoot>
+    </table> -->
+    <table>
+        <caption>Combos</caption>
+        <colgroup>
+            <col span="1" style="background-color: white;">
+            <col span="1" style="background-color: aqua;">
+            <col span="1" style="background-color: deeppink;">
+            <col span="1" style="background-color: yellow;" >
+            <col span="1" style="background-color: lime;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Hamburguer</th>
+                <th scope="col">Acompanhamento</th>
+                <th scope="col">Bebida</th>
+                <th scope="col">Sobremesa</th>
+                <th scope="col">Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>X-Burguer Bacon</td>
+                <td>Batatas Cheddar e Bacon</td>
+                <td>Coca-Cola</td>
+                <td>Sundae Chocolate</td>
+                <td>R$ 60,00</td>
+            </tr>
+            <tr>
+                <td>X-Burguer Tradicional</td>
+                <td>Batatas Cheddar e Bacon</td>
+                <td>Coca-Cola</td>
+                <td>Torta de Morango</td>
+                <td>R$ 60,00</td>
+            </tr>
+            <tr>
+                <td>X-Burguer Tradicional</td>
+                <td>Batata Clássica</td>
+                <td>Coca-Cola</td>
+                <td>Sundae Chocolate</td>
+                <td>R$ 60,00</td>
+            </tr>
+            <tr>
+                <td>X-Burguer Bacon</td>
+                <td>Batata Clássica</td>
+                <td>Coca-Cola</td>
+                <td>Torta de Morango</td>
+                <td>R$ 60,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">A Melhor Hamburgueria do Bairro!</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- <table>
+        <caption>Minhas Linguagens</caption>
+        <tbody>
+            <tr>
+                <th scope="row">C#</th>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <th scope="row">HTML</th>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td>Básico</td>
+            </tr>
+        </tbody>
+    </table> -->
+</body>
+</html>
