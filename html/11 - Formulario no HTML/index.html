@@ -8,55 +8,110 @@
 <body>
     <form action="https://httpbin.org/post" method="post">
         <div>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" maxlength="20" required placeholder="Nome" id="nome" />
+                </div>
+                <div>
+                    <label>E-Mail</label>
+                    <input type="email" placeholder="E-Mail" />
+                </div>
+                <div>
+                    <label>Senha</label>
+                    <input type="password" />
+                </div>
+                <div>
+                    <label>Telefone</label>
+                    <input type="tel" pattern="" />
+                </div>
+                <div>
+                    <label>Site Pessoal</label>
+                    <input type="url" />
+                </div>
+            </fieldset>
             <div>
-                <label>Nome</label>
-                <input type="text" maxlength="20" required placeholder="Nome" />
-            </div>
-            <div>
-                <label>E-Mail</label>
-                <input type="email" placeholder="E-Mail" />
-            </div>
-            <div>
-                <label>Senha</label>
-                <input type="password" />
-            </div>
-            <div>
-                <label>Telefone</label>
-                <input type="tel" pattern="" />
-            </div>
-            <div>
-                <label>Site Pessoal</label>
-                <input type="url" />
+                <label>Estado</label>
+                <select name="estado">
+                    <optgroup label="Sudeste">
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="BA">Bahia</option>
+                    </optgroup>
+                </select>
             </div>
         </div>
         <div>
+            <label>Idade</label>
+            <input type="number" min="18" max="100" required />
+            <!-- <input type="range" /> -->
+        </div>
+        <div>
+            <label>Data de Nascimento</label>
+            <input type="date" />
+        </div>
+        <div>
+            <label>Hora do Nascimento</label>
+            <input type="time" />
+        </div>
+        <div>
+            <label>Data e Hora Preferida</label>
+            <input type="datetime-local" />
+        </div>
+        <div>
+            <label>Mês do Nascimento</label>
+            <input type="month" />
+        </div>
+        <div>
+            <label>Semana</label>
+            <input type="week" />
+        </div>
+        <div>
+            <label>Década Preferida</label>
+            <input type="number" min="1950" max="2020" step="10" />
+        </div>
+        <div>
+            <label for="programador">É Programador?</label>
+            <input type="checkbox" name="checkbox" id="programador" />
+        </div>
+        <div>
+            <label>Sexo</label>
             <div>
-                <label>Idade</label>
-                <input type="number" required min="5" max="200" />
-                <input type="range" min="5" max="200" />
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="masculino" />
             </div>
             <div>
-                <label>Data de Nascimento</label>
-                <input type="date" />
-            </div>
-            <div>
-                <label>Hora que Você Vai para Casa</label>
-                <input type="time" />
-            </div>
-            <div>
-                <label>Data e Hora do Seu Nascimento</label>
-                <input type="datetime-local" /> 
-            </div>
-            <div>
-                <label>Mês do Seu Aniversário</label>
-                <input type="month" />
-            </div>
-            <div>
-                <label>Década Preferida</label>
-                <input type="number" min="1950" max="2020" step="10" />
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="feminino" />
             </div>
         </div>
-
+        <div>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <div>
+                    <label for="tituloMensagem">Título</label>
+                    <input type="text" id="tituloMensagem" />
+                </div>
+                <div>
+                    <label>Mensagem</label>
+                    <textarea></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <div>
+                <label for="corPreferida">Cor Preferida</label>
+                <input id="corPreferida" type="color" required />
+            </div>
+            <div>
+                <label for="comidaPreferida">Foto da Sua Comida Preferida</label>
+                <input type="file" id="comidaPreferida" required />
+            </div>
+        </div>
         <div>
             <button type="submit">Submeter</button>
         </div>
